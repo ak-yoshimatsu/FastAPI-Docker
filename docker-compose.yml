@@ -10,6 +10,8 @@ services:
       - 8000:8000
     environment:
       - WATCHFILES_FORCE_POLLING=true
+    depends_on:
+      - minio
 
   db:
     image: mysql:8.0
