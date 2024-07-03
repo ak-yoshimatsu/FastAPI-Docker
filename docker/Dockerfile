@@ -2,6 +2,7 @@ FROM python:3.12-bullseye
 
 # pythonの出力表示をDocker用に調整
 ENV PYTHONUNBUFFERD=1
+ENV PYTHONDONTWRITEBYTECODE 1
 
 WORKDIR /src
 
